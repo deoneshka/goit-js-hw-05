@@ -22,10 +22,7 @@ class Storage {
 
     removeItem(item) {
         const removedItemIndex = this.items.indexOf(item);
-        
-        if (this.items.includes(item)) {
-            this.items.splice(removedItemIndex, 1)
-        };
+        this.items.splice(removedItemIndex, 1);
     }
 }
 
