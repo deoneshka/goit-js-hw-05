@@ -21,8 +21,10 @@ class Storage {
     }
 
     removeItem(item) {
+        if (this.items.includes(item)) {
         const removedItemIndex = this.items.indexOf(item);
         this.items.splice(removedItemIndex, 1);
+        };
     }
 }
 
